@@ -1,0 +1,109 @@
+.fade-out {
+  -webkit-animation: fade-out 2.6s linear both;
+  animation: fade-out 2.6s linear both;
+}
+
+@-webkit-keyframes fade-out {
+  0% {
+    filter: brightness(0%);
+  }
+
+  100% {
+    filter: brightness(100%);
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    filter: brightness(0%);
+  }
+
+  100% {
+    filter: brightness(100%);
+  }
+}
+
+.fade-out-final {
+  -webkit-animation: fade-out-final 5s linear both;
+  animation: fade-out-final 5s linear both;
+}
+
+@-webkit-keyframes fade-out-final {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-out-final {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.credits-fade {
+  -webkit-animation: credits-fade 2s linear both;
+  animation: credits-fade 2s linear both;
+}
+
+@-webkit-keyframes credits-fade {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes credits-fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#ccc1 {}
+
+#ccc2 {}
+
+#ccc3 {}
+
+#ccc4 {}
+
+#ccc5 {}
+
+#ccc6 {}
+
+#ccc7 {}
+
+#ccc8 {}
+
+#ccc9 {}
+
+#ccc10 {}
+
+#ccc11 {}
+
+#ccc12 {}
+
+#ccc13 {}
+
+#ccc14 {}
+
+#ccc15 {}
+
+#ccc16 {}
+
+.cellBG {
+  width: 100%;
+  height: 100%;
+  background-color: #132033;
+  opacity: 1;
+}

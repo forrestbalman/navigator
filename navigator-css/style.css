@@ -1,0 +1,484 @@
+html { height: 100vh }
+
+body { 
+  overflow: hidden;
+  background: url(../navigator-images/space-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans', sans-serif;
+  color: azure;
+}
+
+#grid-container {}
+.grid-container {
+  transition: 5s;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 20vw 15vw 15vw 15vw 15vw 20vw;
+  grid-template-rows: 10vh 20vh 20vh 20vh 20vh 10vh;
+  grid-template-areas: "more-info space space space space restart" "choose navigator navigator navigator navigator arrow" "instructions navigator navigator navigator navigator arrow" "instructions navigator navigator navigator navigator counter" "instructions navigator navigator navigator navigator counter" "start links links links links .";
+}
+
+#instructions{
+  opacity: 1;
+  transition: 0.7s;
+}
+
+.instructions {
+  grid-area: instructions; 
+  margin-top: 10%;
+}
+
+.instructions h3 {
+  text-align: center;
+  font-size: 1.8em;
+  margin: 0;
+}
+
+.instructions ol {
+  margin-left: -5%;
+  margin-right: 5%;
+  font-size: 0.8em;
+  line-height: 125%;
+}
+
+.instructions p {
+  font-size: 0.8em;
+  margin-right: 5%;
+  margin-left: 6%;
+}
+
+.instructions form {
+  text-align: center;
+}
+
+.instructions input[type=submit] {
+  background-color: azure;
+  border: 1.5px solid yellow;
+  text-decoration: none;
+  margin-left: 5px;
+  outline: none;
+}
+
+.instructions input[type=submit]:active {
+  outline: none;
+}
+
+#choose {
+  transition: 0.7s;
+  opacity: 0;
+}
+
+.choose { 
+  grid-area: choose;
+  text-align: center;
+  margin-top: 0%;
+  font-size: 250%;
+}
+
+.arrow {
+  grid-area: arrow;
+}
+
+#arrowImg {
+  opacity: 0;
+  width: 45%;
+  height: 45%;
+  filter: brightness(3);
+  margin-left: 27%;
+  margin-top: 27%;
+}
+
+.counter {
+  grid-area: counter;
+  font-family: 'Noto Sans', sans-serif;
+  color: azure;
+  text-align: center;
+}
+
+#countdown {
+  font-size: 6em;
+  margin-top: 0;
+}
+
+.more-info {
+  grid-area: more-info;
+}
+
+.more-info a {
+  color: black;
+  text-decoration: none;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1.3em;
+}
+
+.more-info button {
+  width: 40%;
+  height: 40%;
+  margin-top: 10%;
+  margin-left: 30%;
+  border: 2px solid green;
+  outline: none;
+}
+
+.restart {
+  grid-area: restart;
+}
+
+.restart button {
+  width: 40%;
+  height: 40%;
+  margin-top: 10%;
+  margin-left: 30%;
+  color: black;
+  text-decoration: none;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1em;
+  border: 2px solid orange;
+  outline: none;
+}
+
+#title{
+  opacity: 1;
+  transition: 0.7s;
+}
+
+.title { 
+  grid-area: space;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.title h1 {
+  text-align: center;
+  font-size: 4em;
+  animation: tracking-in-expand 1.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.links {
+  grid-area: links;
+	text-align: center;
+	padding: 1vw 1vh;
+	font-size: 15px;
+}
+
+.links nav {
+  padding: 5px;
+  margin-top: 2%;
+  border: 1px solid rgb(135, 190, 163);
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.links a {
+  text-decoration: none;
+  color: rgb(203, 233, 218);
+  transition: 0.3s;
+}
+
+.links a:hover {
+  transition: 0.3s;
+  z-index: 50;
+  font-size: 120%;
+}
+
+#start {
+  opacity: 1;
+  transition: 0.7s;
+}
+.start { 
+  grid-area: start;
+}
+
+.start button {
+  width: 70%;
+  height: 70%;
+  position: relative;
+  margin-left: 15%;
+  color: black;
+  text-decoration: none;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 2.4em;
+  border: 2px solid maroon;
+  outline: none;
+}
+
+.navigator {
+  display: grid;
+  grid-template-columns: 15vw 15vw 15vw 15vw;
+  grid-template-rows: 20vh 20vh 20vh 20vh;
+  grid-template-areas: ". . . ." ". . . ." ". . . ." ". . . .";
+  grid-area: navigator;
+}
+
+#c1 {
+  border: 1px solid azure;
+}
+#c2 {
+  border: 1px solid azure;
+}
+#c3 {
+  border: 1px solid azure;
+}
+#c4 {
+  border: 1px solid azure;
+}
+#c5 {
+  border: 1px solid azure;
+}
+#c6 {
+  border: 1px solid azure;
+}
+#c7 {
+  border: 1px solid azure;
+}
+#c8 {
+  border: 1px solid azure;
+}
+#c9 {
+  border: 1px solid azure;
+}
+#c10 {
+  border: 1px solid azure;
+}
+#c11 {
+  border: 1px solid azure;
+}
+#c12 {
+  border: 1px solid azure;
+}
+#c13 {
+  border: 1px solid azure;
+}
+#c14 {
+  border: 1px solid azure;
+}
+#c15 {
+  border: 1px solid azure;
+}
+#c16 {
+  border: 1px solid azure;
+}
+#cc1{}
+#cc2{}
+#cc3{}
+#cc4{}
+#cc5{}
+#cc6{}
+#cc7{}
+#cc8{}
+#cc9{}
+#cc10{}
+#cc11{}
+#cc12{}
+#cc13{}
+#cc14{}
+#cc15{}
+#cc16{}
+/**/
+
+.blankSquare {
+  width: 100%;
+  height: 100%;
+  background-color: #0f1826;
+  opacity: 1;
+}
+
+#endingCreditsText {
+  opacity: 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  transition: 5s;
+}
+
+.endingCreditsTextp1 {
+  font-size: 500%;
+}
+
+.endingCreditsTextp2 {
+  font-size: 200%;
+}
+
+
+
+.navigator-info-body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  background-image: url(../navigator-images/space-background.jpg);
+  background-size: cover;
+  animation: navigator-info-fade-in 2.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@keyframes navigator-info-fade-in {
+  0% {
+    opacity: (0);
+  }
+  100% {
+    opacity: (1);
+  }
+}
+
+.navigator-info-header a {
+  display: flex;
+  justify-content: center;
+  font-family: 'Noto Sans', sans-serif;
+  text-decoration: none;
+  cursor: crosshair;
+}
+
+.navigator-info-header h1 a{
+  margin-left: 40%;
+  margin-right: 40%;
+  margin-top: 0%;
+  font-size: 70px;
+  transition: 0.3s;
+  color: azure;
+}
+
+.navigator-info-header h1:hover a:hover {
+  transition: 0.3s;
+  font-size: 74px;
+  color: lightcoral;
+}
+
+.navigator-info-header h2 a {
+  margin-left: 42%;
+  margin-right: 42%;
+  padding-bottom: 3vh;
+  font-size: 18px;
+  transition: 0.3s;
+  color: azure;
+}
+
+.navigator-info-header h2:hover a:hover {
+  transition: 0.3s;
+  font-size: 20px;
+  color: lightcoral;
+}
+
+.navigator-info-body p {
+  font-size: 15px;
+  line-height: 150%;
+  text-align: justify;
+  margin-left: 4%;
+  margin-right: 62%;
+  font-family: 'Noto Sans', sans-serif;
+  color: azure;
+}
+
+.navigator-info-p1 {
+  position: absolute;
+  top: 23%;
+}
+
+.navigator-info-p2 {
+  position: absolute;
+  top: 47%;
+}
+
+.navigator-info-p3 {
+  position: absolute;
+  top: 73%;
+}
+
+.navigator-info-body-box {
+  position: absolute;
+  top: 23%;
+  width: 38%;
+  height: 68%;
+  margin-left: 2%;
+  margin-right: 103%;
+  background: linear-gradient(270deg, #30defb, #4a64b4);
+  background-size: 400% 400%;
+  animation: navigator-info-body-box-gradient 14s ease infinite;
+  opacity: 0.15;
+}
+
+@keyframes navigator-info-body-box-gradient { 
+  0%{background-position:0% 19%}
+  50%{background-position:100% 82%}
+  100%{background-position:0% 19%}
+}
+
+.navigator-info-media1 {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 15% 15% 15% 15%;
+  grid-template-rows: 20%;
+  grid-template-areas: ".   .   .   .";
+  grid-column-gap: 15%;
+  grid-row-gap: 45%;
+  top: 33%;
+  left: 43%;
+}
+
+.navigator-info-media1 video {
+  transition: 0.5s;
+}
+
+.navigator-info-media1 video:hover {
+  transition: 0.5s;
+  transform: scale(1.35);
+  z-index: 50;
+}
+
+.navigator-info-media2 {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 15% 15% 15%;
+  grid-template-rows: 20%;
+  grid-template-areas: ". . .";
+  grid-column-gap: 25%;
+  grid-row-gap: 45%;
+  top: 56%;
+  left: 50.5%;
+}
+
+.navigator-info-media2 video {
+  transition: 0.5s;
+}
+
+.navigator-info-media2 video:hover {
+  transition: 0.5s;
+  transform: scale(1.35);
+  z-index: 50;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

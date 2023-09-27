@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>navigator</title>
+        <link rel="stylesheet" type="text/css" href="navigator-css/style.css" />
+        <link rel="stylesheet" type="text/css" href="navigator-css/animation.css" />
+        <link href="https://fonts.googleapis.com/css?family=Pangolin|Shadows+Into+Light+Two|Noto+Sans" rel="stylesheet" />
+    </head>
+    <body>
+        <div id="endingCreditsText">
+            <p class="endingCreditsTextp1">navigator</p>
+            <p class="endingCreditsTextp2">by Forrest Balman</p>
+        </div>
+        <div id="grid-container" class="grid-container">
+            <div id="instructions" class="instructions">
+                <h3>-instructions-</h3>
+                <ol>
+                    <li>press start</li>
+                    <li>pick a square, don't play until the timer finishes</li>
+                    <li>play, wait for arrow</li>
+                    <li>move in the arrows direction after the timer finishes</li>
+                    <li>repeat until the end</li>
+                </ol>
+                <p>
+                    if the arrow points you off the screen, wrap around to the other side.<br /><br />
+                    if the arrow <strong>is diagonal</strong> and points you off the screen, choose any square.<br /><br />
+                    any number of players.<br />
+                </p>
+            </div>
+            <div id="choose" class="choose">
+                <h2>choose</h2>
+            </div>
+            <div class="arrow">
+                <img src="navigator-images/navigator-arrow.png" id="arrowImg" />
+            </div>
+            <div class="counter">
+                <h3 id="countdown"></h3>
+            </div>
+            <div class="more-info">
+                <button><a href="navigator-info.html">learn more</a></button>
+            </div>
+            <div class="restart">
+                <button onclick="window.location.reload()">restart</button>
+            </div>
+            <div id="title" class="title">
+                <h1>navigator</h1>
+            </div>
+            <div class="navigator">
+                <div id="c1">
+                    <div id="cc1">
+                        <div id="ccc1"></div>
+                    </div>
+                </div>
+                <div id="c2">
+                    <div id="cc2">
+                        <div id="ccc2"></div>
+                    </div>
+                </div>
+                <div id="c3">
+                    <div id="cc3">
+                        <div id="ccc3"></div>
+                    </div>
+                </div>
+                <div id="c4">
+                    <div id="cc4">
+                        <div id="ccc4"></div>
+                    </div>
+                </div>
+                <div id="c5">
+                    <div id="cc5">
+                        <div id="ccc5"></div>
+                    </div>
+                </div>
+                <div id="c6">
+                    <div id="cc6">
+                        <div id="ccc6"></div>
+                    </div>
+                </div>
+                <div id="c7">
+                    <div id="cc7">
+                        <div id="ccc7"></div>
+                    </div>
+                </div>
+                <div id="c8">
+                    <div id="cc8">
+                        <div id="ccc8"></div>
+                    </div>
+                </div>
+                <div id="c9">
+                    <div id="cc9">
+                        <div id="ccc9"></div>
+                    </div>
+                </div>
+                <div id="c10">
+                    <div id="cc10">
+                        <div id="ccc10"></div>
+                    </div>
+                </div>
+                <div id="c11">
+                    <div id="cc11">
+                        <div id="ccc11"></div>
+                    </div>
+                </div>
+                <div id="c12">
+                    <div id="cc12">
+                        <div id="ccc12"></div>
+                    </div>
+                </div>
+                <div id="c13">
+                    <div id="cc13">
+                        <div id="ccc13"></div>
+                    </div>
+                </div>
+                <div id="c14">
+                    <div id="cc14">
+                        <div id="ccc14"></div>
+                    </div>
+                </div>
+                <div id="c15">
+                    <div id="cc15">
+                        <div id="ccc15"></div>
+                    </div>
+                </div>
+                <div id="c16">
+                    <div id="cc16">
+                        <div id="ccc16"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="start" class="start">
+                <button onclick="javascript: initCountLoop(); hideInstructions(); showChoose(); bgSetter(); setTimeout(countLoop, 15000);  setTimeout(animGen, 1000);">Start</button>
+            </div>
+            <script src="navigator-js/script.js"></script>
+        </div>
+    </body>
+</html>
